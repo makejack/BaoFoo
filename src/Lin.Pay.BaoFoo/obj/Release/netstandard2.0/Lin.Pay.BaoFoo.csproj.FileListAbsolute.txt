@@ -1,0 +1,10 @@
+D:\Projects\Pay\src\Lin.Pay.BaoFoo\bin\Release\netstandard2.0\Lin.Pay.BaoFoo.deps.json
+D:\Projects\Pay\src\Lin.Pay.BaoFoo\bin\Release\netstandard2.0\Lin.Pay.BaoFoo.dll
+D:\Projects\Pay\src\Lin.Pay.BaoFoo\bin\Release\netstandard2.0\Lin.Pay.BaoFoo.pdb
+D:\Projects\Pay\src\Lin.Pay.BaoFoo\obj\Release\netstandard2.0\Lin.Pay.BaoFoo.csproj.AssemblyReference.cache
+D:\Projects\Pay\src\Lin.Pay.BaoFoo\obj\Release\netstandard2.0\Lin.Pay.BaoFoo.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\Pay\src\Lin.Pay.BaoFoo\obj\Release\netstandard2.0\Lin.Pay.BaoFoo.AssemblyInfoInputs.cache
+D:\Projects\Pay\src\Lin.Pay.BaoFoo\obj\Release\netstandard2.0\Lin.Pay.BaoFoo.AssemblyInfo.cs
+D:\Projects\Pay\src\Lin.Pay.BaoFoo\obj\Release\netstandard2.0\Lin.Pay.BaoFoo.csproj.CoreCompileInputs.cache
+D:\Projects\Pay\src\Lin.Pay.BaoFoo\obj\Release\netstandard2.0\Lin.Pay.BaoFoo.dll
+D:\Projects\Pay\src\Lin.Pay.BaoFoo\obj\Release\netstandard2.0\Lin.Pay.BaoFoo.pdb

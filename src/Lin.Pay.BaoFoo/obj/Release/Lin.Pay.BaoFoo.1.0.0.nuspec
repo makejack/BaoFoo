@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Lin.Pay.BaoFoo</id>
+    <version>1.0.0</version>
+    <title>Lin.Pay.BaoFoo</title>
+    <authors>Lin</authors>
+    <license type="file">LICENSE.txt</license>
+    <licenseUrl>https://aka.ms/deprecateLicenseUrl</licenseUrl>
+    <readme>README.md</readme>
+    <projectUrl>https://github.com/makejack/BaoFoo</projectUrl>
+    <description>宝付支付SDK
+文档地址	https://doc.mandao.com/
+登陆账号	baofu
+登陆密码	baofu@64
+
+测试环境联调信息	内容
+机构号/平台号	100026136
+商户号	100026136
+终端号	200001259
+证书密码	100026136_259652
+证书下载	测试证书(https://doc.mandao.com/attach_files/kljhgfdsa/176)</description>
+    <tags>baofoo</tags>
+    <repository type="git" url="https://github.com/makejack/BaoFoo" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="BouncyCastle.Cryptography" version="2.1.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Abstractions" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="7.0.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Http" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Json" version="7.0.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Projects\Pay\src\Lin.Pay.BaoFoo\bin\Release\netstandard2.0\Lin.Pay.BaoFoo.dll" target="lib\netstandard2.0\Lin.Pay.BaoFoo.dll" />
+    <file src="D:\Projects\Pay\LICENSE.txt" target="LICENSE.txt" />
+    <file src="D:\Projects\Pay\README.md" target="README.md" />
+  </files>
+</package>

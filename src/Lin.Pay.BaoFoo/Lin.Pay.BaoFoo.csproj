@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+      <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+      <PackageReadmeFile>README.md</PackageReadmeFile>
+    <LangVersion>11</LangVersion>
+    <IsPackable>true</IsPackable>
+    <Title>Lin.Pay.BaoFoo</Title>
+    <Description>宝付支付SDK
+文档地址	https://doc.mandao.com/
+登陆账号	baofu
+登陆密码	baofu@64
+
+测试环境联调信息	内容
+机构号/平台号	100026136
+商户号	100026136
+终端号	200001259
+证书密码	100026136_259652
+证书下载	测试证书(https://doc.mandao.com/attach_files/kljhgfdsa/176)</Description>
+    <RepositoryUrl>https://github.com/makejack/BaoFoo</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Lin</Authors>
+    <PackageProjectUrl>https://github.com/makejack/BaoFoo</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>baofoo</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BouncyCastle.Cryptography" Version="2.1.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="7.0.3" />
+    <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+    <PackageReference Include="System.Text.Json" Version="7.0.2" />
+  </ItemGroup>
+    
+    <ItemGroup>
+        <None Include="..\..\LICENSE.txt" Pack="true" PackagePath=""/>
+        <None Include="..\..\README.md" Pack="true" PackagePath=""/>
+    </ItemGroup>
+    
+</Project>
