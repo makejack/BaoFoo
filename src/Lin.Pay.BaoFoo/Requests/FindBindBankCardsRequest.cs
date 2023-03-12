@@ -29,9 +29,9 @@ public class FindBindBankCardsRequest : AbstractRequest, IRequest<BaseResponse<L
     /// 获取地址
     /// </summary>
     /// <returns></returns>
-    public string GetUrl(string param = null)
+    public string GetUrl(bool debug, string param = null)
     {
-        return $"{HostUrl}cust/v2.0.0/findBindBankCards";
+        return $"{GetHost(debug)}cust/v2.0.0/findBindBankCards";
     }
 
     /// <summary>

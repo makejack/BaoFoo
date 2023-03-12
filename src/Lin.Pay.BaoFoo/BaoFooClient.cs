@@ -31,11 +31,12 @@ public class BaoFooClient : IBaoFooClient
         VerifyOptions(options);
 
         var requestContent = request.PrimaryHandler(options);
-        var url = request.GetUrl(requestContent);
+        var url = request.GetUrl(options.Debug, requestContent);
 
         var httpContent = request.GetHttpContent(requestContent);
         
         var client = _clientFactory.CreateClient(Name);
+        client.Timeout = TimeSpan.FromSeconds(60);
         var res = await client.PostAsync(url, httpContent);
         if (res.IsSuccessStatusCode)
         {

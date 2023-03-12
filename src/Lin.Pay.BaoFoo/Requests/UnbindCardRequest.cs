@@ -37,9 +37,9 @@ public class UnbindCardRequest : AbstractRequest, IRequest<BooleanResponse>
     /// 获取地址
     /// </summary>
     /// <returns></returns>
-    public string GetUrl(string param = null)
+    public string GetUrl(bool debug, string param = null)
     {
-        return $"{HostUrl}cust/v3.0.0/unbindCard";
+        return $"{GetHost(debug)}cust/v3.0.0/unbindCard";
     }
 
     /// <summary>

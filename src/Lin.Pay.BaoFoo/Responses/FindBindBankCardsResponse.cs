@@ -46,7 +46,7 @@ public class FindBindBankCardsResponse
     /// <summary>
     /// 银行卡类型
     /// </summary>
-    [JsonPropertyName("cardType	")]
+    [JsonPropertyName("cardType")]
     public string CardType { get; set; }
 
     /// <summary>

@@ -43,4 +43,20 @@ public class BaoFooOptions
     /// 证书密码
     /// </summary>
     public string Password { get; set; }
+
+    /// <summary>
+    /// Debug模式
+    /// </summary>
+    public bool Debug { get; set; }
+    
+    /// <summary>
+    /// 商户识别码
+    /// </summary>
+    public string SimId { get; set; }
+
+    /// <summary>
+    /// 应用id
+    /// </summary>
+    public string AppId { get; set; }
+
 }

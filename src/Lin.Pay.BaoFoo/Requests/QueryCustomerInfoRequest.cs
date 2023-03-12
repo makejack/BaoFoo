@@ -32,9 +32,9 @@ public class QueryCustomerInfoRequest : AbstractRequest, IRequest<ObjResponse<Qu
     /// 获取地址
     /// </summary>
     /// <returns></returns>
-    public string GetUrl(string param = null)
+    public string GetUrl(bool debug, string param = null)
     {
-        return $"{HostUrl}cust/v2.0.0/queryCustomerInfo";
+        return $"{GetHost(debug)}cust/v2.0.0/queryCustomerInfo";
     }
 
     public override string GetSignFieldString()

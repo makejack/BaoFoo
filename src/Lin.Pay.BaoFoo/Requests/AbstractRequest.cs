@@ -55,18 +55,11 @@ public abstract class AbstractRequest : BaseRequest, ISignature
     [JsonPropertyName("requestDate")]
     public string RequestDate { get; set; }
 
-#if DEBUG
-    /// <summary>
-    /// 请求地址
-    /// </summary>
-    internal const string HostUrl = "https://account.baofoo.com/api/";
-#else
-    /// <summary>
-    /// 请求地址
-    /// </summary>
-    internal const string HostUrl = "https://bht.mandao.com/api/";
-#endif
-
+    internal string GetHost(bool debug)
+    {
+        return debug ? "https://account.baofoo.com/api/" : "https://bht.mandao.com/api/";
+    }
+    
     /// <summary>
     /// 获取httpContent
     /// </summary>
@@ -87,7 +80,7 @@ public abstract class AbstractRequest : BaseRequest, ISignature
     /// 初始值
     /// </summary>
     /// <param name="options"></param>
-    private void Initial(BaoFooOptions options)
+    protected virtual void Initial(BaoFooOptions options)
     {
         OrgNo = options.OrgNo;
         MerchantNo = options.MerchantNo;

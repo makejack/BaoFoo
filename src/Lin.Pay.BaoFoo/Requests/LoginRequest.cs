@@ -32,9 +32,9 @@ public class LoginRequest : AbstractRequest, IRequest<LoginResponse>
     /// 获取地址
     /// </summary>
     /// <returns></returns>
-    public string GetUrl(string param = null)
+    public string GetUrl(bool debug, string param = null)
     {
-        var url = $"{HostUrl}wallet/v3.0.0/login?";
+        var url = $"{GetHost(debug)}wallet/v3.0.0/login?";
         if (!string.IsNullOrEmpty(param))
         {
             url += param;

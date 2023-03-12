@@ -20,9 +20,9 @@ public class GetBalanceNewRequest : AbstractRequest, IRequest<DefaultResponse>
     /// 获取地址
     /// </summary>
     /// <returns></returns>
-    public  string GetUrl(string param = null)
+    public  string GetUrl(bool debug, string param = null)
     {
-        return $"{HostUrl}wallet/v3.0.0/getBalanceNew";
+        return $"{GetHost(debug)}wallet/v3.0.0/getBalanceNew";
     }
 
     /// <summary>

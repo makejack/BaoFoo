@@ -72,9 +72,9 @@ public class PaymentRequest : AbstractRequest, IRequest<DecryptResponse<PaymentR
     /// 获取地址
     /// </summary>
     /// <returns></returns>
-    public string GetUrl(string param = null)
+    public string GetUrl(bool debug, string param = null)
     {
-        return $"{HostUrl}trade/v3.0.0/profitShareRefundApply";
+        return $"{GetHost(debug)}trade/v3.0.0/profitShareRefundApply";
     }
 
     /// <summary>
@@ -84,6 +84,14 @@ public class PaymentRequest : AbstractRequest, IRequest<DecryptResponse<PaymentR
     public override string GetSignFieldString()
     {
         return "orgNo|merchantNo|terminalNo|callType|loginNo|requestDate|dataContent";
+    }
+
+    protected override void Initial(BaoFooOptions options)
+    {
+        base.Initial(options);
+
+        AppId = options.AppId;
+        SimId = options.SimId;
     }
 
     /// <summary>

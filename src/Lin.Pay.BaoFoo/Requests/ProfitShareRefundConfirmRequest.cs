@@ -56,9 +56,9 @@ public class ProfitShareRefundConfirmRequest : AbstractRequest, IRequest<BaseRes
     /// 获取地址
     /// </summary>
     /// <returns></returns>
-    public string GetUrl(string param = null)
+    public string GetUrl(bool debug, string param = null)
     {
-        return $"{HostUrl}trade/v3.0.0/profitShareRefundConfirm";
+        return $"{GetHost(debug)}trade/v3.0.0/profitShareRefundConfirm";
     }
 
     /// <summary>
